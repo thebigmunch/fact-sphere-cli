@@ -9,7 +9,7 @@
 
 ## Installation
 
-``pip install fact-sphere-cli``
+``pip install -U fact-sphere-cli``
 
 
 ## Usage
