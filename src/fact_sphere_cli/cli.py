@@ -9,8 +9,19 @@ from . import __title__, __version__
 CONTEXT_SETTINGS = dict(max_content_width=200, help_option_names=['-h', '--help'])
 
 
-@click.group(cls=DefaultGroup, default='text', default_if_no_args=True, context_settings=CONTEXT_SETTINGS)
-@click.version_option(__version__, '-V', '--version', prog_name=__title__, message="%(prog)s %(version)s")
+@click.group(
+	cls=DefaultGroup,
+	default='text',
+	default_if_no_args=True,
+	context_settings=CONTEXT_SETTINGS,
+)
+@click.version_option(
+	__version__,
+	'-V',
+	'--version',
+	prog_name=__title__,
+	message="%(prog)s %(version)s",
+)
 def fact_sphere_cli():
 	"""A CLI for Portal 2 Fact Sphere facts."""
 
@@ -18,8 +29,19 @@ def fact_sphere_cli():
 
 
 @fact_sphere_cli.command()
-@click.version_option(__version__, '-V', '--version', prog_name=__title__, message="%(prog)s %(version)s")
-@click.option('--read', is_flag=True, default=False, help="Return contents for piping.")
+@click.version_option(
+	__version__,
+	'-V',
+	'--version',
+	prog_name=__title__,
+	message="%(prog)s %(version)s",
+)
+@click.option(
+	'--read',
+	is_flag=True,
+	default=False,
+	help="Return contents for piping.",
+)
 def audio(read):
 	"""Get the filepath or file content for a random fact."""
 
@@ -32,7 +54,13 @@ def audio(read):
 
 
 @fact_sphere_cli.command()
-@click.version_option(__version__, '-V', '--version', prog_name=__title__, message="%(prog)s %(version)s")
+@click.version_option(
+	__version__,
+	'-V',
+	'--version',
+	prog_name=__title__,
+	message="%(prog)s %(version)s",
+)
 def fact():
 	"""Get the text, filepath, and type for a random fact."""
 
@@ -44,7 +72,13 @@ def fact():
 
 
 @fact_sphere_cli.command()
-@click.version_option(__version__, '-V', '--version', prog_name=__title__, message="%(prog)s %(version)s")
+@click.version_option(
+	__version__,
+	'-V',
+	'--version',
+	prog_name=__title__,
+	message="%(prog)s %(version)s",
+)
 def text():
 	"""Get the text for a random fact."""
 
