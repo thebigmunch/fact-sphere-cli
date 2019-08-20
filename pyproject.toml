@@ -28,6 +28,7 @@ flake8-builtins = { version = "^1.0", optional = true }
 flake8-comprehensions = { version = "^2.0", optional = true }
 flake8-import-order = { version = "^0.18", optional = true }
 flake8-import-order-tbm = { version = "^1.0.0", optional = true }
+nox = { version = "^2019", optional = true }
 
 [tool.poetry.extras]
 dev = [
@@ -35,7 +36,8 @@ dev = [
 	"flake8-builtins",
 	"flake8-comprehensions",
 	"flake8-import-order",
-	"flake8-import-order-tbm"
+	"flake8-import-order-tbm",
+	"nox"
 ]
 lint = [
 	"flake8",
