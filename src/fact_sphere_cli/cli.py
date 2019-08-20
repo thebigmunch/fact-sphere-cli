@@ -6,7 +6,10 @@ from click_default_group import DefaultGroup
 
 from . import __title__, __version__
 
-CONTEXT_SETTINGS = dict(max_content_width=200, help_option_names=['-h', '--help'])
+CONTEXT_SETTINGS = {
+	'max_content_width': 200,
+	'help_option_names': ['-h', '--help']
+}
 
 
 @click.group(
