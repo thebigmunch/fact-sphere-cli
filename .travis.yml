@@ -1,0 +1,23 @@
+dist: xenial
+cache:
+  directories:
+    - $HOME/.cache/pip
+
+language: python
+
+matrix:
+  fast_finish: true
+
+  include:
+    # Meta
+    - python: "3.7"
+      env: NOXSESSION="lint"
+
+install:
+  - pip install -U nox
+
+script:
+  - nox --non-interactive --session "$NOXSESSION"
+
+notifications:
+  email: false
