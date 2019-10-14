@@ -12,5 +12,5 @@ ON_TRAVIS = 'TRAVIS' in os.environ
 
 @nox.session(reuse_venv=True)
 def lint(session):
-	session.install('.[lint]')
+	session.install('-U', '.[lint]')
 	session.run('flake8', 'src/')
