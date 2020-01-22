@@ -2,7 +2,7 @@
 
 [![PyPI](https://img.shields.io/pypi/v/fact-sphere-cli.svg?label=PyPI)](https://pypi.org/project/fact-sphere-cli/)
 ![](https://img.shields.io/badge/Python-3.6%2B-blue.svg)  
-[![Travis](https://img.shields.io/travis/thebigmunch/fact-sphere-cli.svg?label=Travis)](https://travis-ci.org/thebigmunch/fact-sphere-cli)  
+[![GitHub CI](https://img.shields.io/github/workflow/status/thebigmunch/fact-sphere-cli/CI?label=GitHub%20CI)](https://github.com/thebigmunch/fact-sphere-cli/actions?query=workflow%3ACI)  
 
 [fact-sphere-cli](https://github.com/thebigmunch/fact-sphere-cli) is a CLI for Portal 2 Fact Sphere facts using the
 [fact-sphere](https://github.com/thebigmunch/fact-sphere) library.
