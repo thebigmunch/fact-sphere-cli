@@ -5,7 +5,7 @@ build-backend = "poetry.masonry.api"
 [tool.poetry]
 name = "fact-sphere-cli"
 description = "A CLI for Portal 2 Fact Sphere facts."
-version = "1.0.0"
+version = "1.1.0"
 
 license = "MIT"
 
